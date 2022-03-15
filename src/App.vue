@@ -1,0 +1,39 @@
+<template>
+  <main>
+    <event-list />
+  </main>
+</template>
+
+<script setup>
+import EventList from '@/components/organisms/EventList.vue'
+</script>
+
+<style lang="scss">
+body {
+  background-color: var(--c-beige);
+
+  * {
+    box-sizing: border-box;
+    font-family: var(--font-default);
+  }
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --c-accent: #0f4031;
+  --c-text: #151615;
+  --c-light: #edf0ee;
+  --c-beige: #e3e0dd;
+  --c-error: #a70d0d;
+  --font-default: 'Karla', sans-serif;
+  --font-heading: 'Noto Serif Display', serif;
+}
+
+</style>
